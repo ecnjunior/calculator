@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Calculadora Científica</title>
+    <style>
+      #display {
+        width: 300px;
+        height: 50px;
+        font-size: 20px;
+        text-align: right;
+      }
+      input[type="button"] {
+        width: 70px;
+        height: 70px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input type="text" id="display" disabled />
+      <br />
+      <br />
+      <input type="button" value="sin" onclick="document.getElementById('display').value+='Math.sin('"/>
+      <input type="button" value="cos" onclick="document.getElementById('display').value+='Math.cos('"/>
+      <input type="button" value="tan" onclick="document.getElementById('display').value+='Math.tan('"/>
+      <input type="button" value="log" onclick="document.getElementById('display').value+='Math.log10('"/>
+      <br />
+      <input type="button" value="7" onclick="document.getElementById('display').value+='7'"/>
+      <input type="button" value="8" onclick="document.getElementById('display').value+='8'"/>
+      <input type="button" value="9" onclick="document.getElementById('display').value+='9'"/>
+      <input type="button" value="/" onclick="document.getElementById('display').value+='/'"/>
+      <br />
+      <input type="button" value="4" onclick="document.getElementById('display').value+='4'"/>
+      <input type="button" value="5" onclick="document.getElementById('display').value+='5'"/>
+      <input type="button" value="6" onclick="document.getElementById('display').value+='6'"/>
+      <input type="button" value="*" onclick="document.getElementById('display').value+='*'"/>
+      <br />
+      <input type="button" value="1" onclick="document.getElementById('display').value+='1'"/>
+      <input type="button" value="2" onclick="document.getElementById('display').value+='2'"/>
+      <input type="button" value="3" onclick="document.getElementById('display').value+='3'"/>
+      <input type="button" value="-" onclick="document.getElementById('display').value+='-'"/>
+      <br />
+      <input type="button" value="c" onclick="document.getElementById('display').value=''"/>
+      <input type="button" value="0" onclick="document.getElementById('display').value+='0'"/>
+      <input type="button" value="=" onclick="document.getElementById('display').value=eval(document.getElementById('display').value)"/>
+      <input type="button" value="+" onclick="document.getElementById('display').value+='+'"/>
+    </form>
+
+  </body>
+</html>
